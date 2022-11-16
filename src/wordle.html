@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="he">
+<html dir="rtl" lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wordle.css">
     <title>Wordle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WORDLE!!</h1>
+    <h1>וורדל!</h1>
+    <section class="input-zone">
+        <div class="input-line" id="line1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="input-line" id="line2">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="input-line" id="line3">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="input-line" id="line4">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="input-line" id="line5">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="input-line" id="line6">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+    </section>
+    <section class="keyboard-zone">
+        <div class="keyboard" id="top-line">
+            <span id="del">del</span>
+            <span>פ</span>
+            <span>ו</span>
+            <span>ט</span>
+            <span>א</span>
+            <span>ר</span>
+            <span>ק</span>
+        </div>
+        <div class="keyboard" id="mid-line">
+            <span>ל</span>
+            <span>ח</span>
+            <span>י</span>
+            <span>ע</span>
+            <span>כ</span>
+            <span>ג</span>
+            <span>ד</span>
+            <span>ש</span>
+        </div>
+        <div class="keyboard" id="bottom-line">
+            <span>ת</span>
+            <span>צ</span>
+            <span>מ</span>
+            <span>נ</span>
+            <span>ה</span>
+            <span>ב</span>
+            <span>ס</span>
+            <span>ז</span>
+        </div>
+        <button type="submit">שלח</button>
+    </section>
+    <script src="wordle.js"></script>
 </body>
 </html>
