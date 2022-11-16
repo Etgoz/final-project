@@ -1,0 +1,29 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/wordle.scss src/wordle.css",
+    "dev-server": "live-server src",
+    "dev-sass": "sass src/wordle.scss src/wordle.css --watch",
+    "dev": "npm run dev-server & npm run dev-sass",
+    "start": "echo \"No start script\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Etgoz/final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Etgoz/final-project/issues"
+  },
+  "homepage": "https://github.com/Etgoz/final-project#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.56.1"
+  }
+}
