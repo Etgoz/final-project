@@ -1,84 +1,89 @@
-@mixin center{
-    display: flex;
-    justify-content: center;
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-body{
-    font-family: 'Secular One', sans-serif;
-    text-align: center;
-    max-height: 100vh;
-    max-width: auto;
-
-    h1{
-        font-size: 4rem;
-        margin: 1rem 0;
-    }
+* {
+	font-family: "Secular One", sans-serif;
 }
 
-.input-zone{
-    @include center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 4rem;
+body {
+	text-align: center;
+	max-height: 50%;
+	max-width: auto;
 
-    input{
-        text-align: center;
-        width: 4rem;
-        height: 4rem;
-        border: 4px solid grey;
-        border-radius: 8px;
-        font-size: 4rem;
-    }
+	h1 {
+		font-size: 4rem;
+		margin: 1rem 0;
+	}
 }
 
-.input-line{
-    @include center;
-    gap: 10px;
+.input-zone {
+	@include center;
+	margin-bottom: 4rem;
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		gap: 10px;
+	}
+	.input {
+		@include center;
+		width: 4rem;
+		height: 4rem;
+		border: 4px solid grey;
+		border-radius: 8px;
+		font-size: 4rem;
+	}
+
+	.input:focus {
+		border-color: black;
+		box-shadow: 0 0 5px black;
+	}
 }
 
-.keyboard-zone{
-    @include center;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-
-    button{
-        @include center;
-        align-items: center;
-        border: 3px solid grey;
-        border-radius: 8px;
-        font-size: 3rem;
-        margin: 1rem;
-        height: 4rem;
-        font-family: inherit;
-
-        &:hover{
-            cursor: pointer;    
-        }
-    }
+.input-line {
+	@include center;
+	gap: 10px;
 }
 
-.keyboard{
-    @include center;
-    gap: 5px;
+.keyboard-zone {
+	@include center;
+	flex-direction: column;
+	gap: 5px;
 
-    span{
-        @include center;
-        align-items: center;
-        text-align: center;
-        height: 3rem;
-        width: 3rem;
-        border: 3px solid grey;
-        border-radius: 8px;
-        font-size: 3rem;
+	button:active {
+		border-color: black;
+		box-shadow: 0 0 5px black;
+	}
 
-        &:hover{
-            cursor: pointer;    
-        }
-    }
+	#submit {
+		@include center;
+		border: 3px solid grey;
+		border-radius: 8px;
+		font-size: 3rem;
+		margin: 1rem;
+		height: 4rem;
+		font-family: inherit;
+	}
 }
 
-#del{
-    width: 5rem;
+.keyboard {
+	@include center;
+	gap: 5px;
+
+	button {
+		@include center;
+		height: 3.5rem;
+		width: 3.5rem;
+		border: 3px solid grey;
+		border-radius: 8px;
+		font-size: 3rem;
+	}
+}
+
+#del {
+	width: 5rem;
 }
