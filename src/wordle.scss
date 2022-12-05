@@ -10,14 +10,14 @@
 
 html {
 	font-size: 1em;
-	height: 100vh;
-	width: 100vw;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
 
 body {
 	text-align: center;
+	height: 100vh;
+	width: 100vw;
 
 	h1 {
 		font-size: 4rem;
@@ -27,7 +27,8 @@ body {
 
 .input-zone {
 	@include center;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
+	height: 60%;
 
 	.grid-container {
 		display: grid;
@@ -54,6 +55,7 @@ body {
 	@include center;
 	flex-direction: column;
 	gap: 5px;
+	height: 40%;
 
 	button:active {
 		border-color: black;

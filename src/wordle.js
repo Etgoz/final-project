@@ -60,15 +60,15 @@ Array.from(allButtons).forEach((button) => {
 const lastCells = document.querySelectorAll(".last");
 
 lastCells.forEach((cell) => {
-	if (cell.textContent !== "" && "כמנפצ".includes(cell.textContent)) {
+	if (cell.innerText && "כמנפצ".includes(cell.innerText)) {
 		alert("כמנפצ");
-		// switch (cell.textContent) {
-		// 	case "כ":
-		// 		cell.textContent = "ך";
-		// 		break;
-		// 	case "מ":
-		// 		cell.textContent = "מ";
-		// 		break;
-		// }
+		// 		// switch (cell.textContent) {
+		// 		// 	case "כ":
+		// 		// 		cell.textContent = "ך";
+		// 		// 		break;
+		// 		// 	case "מ":
+		// 		// 		cell.textContent = "מ";
+		// 		// 		break;
+		// 		// }
 	}
 });
